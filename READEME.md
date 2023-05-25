@@ -11,4 +11,49 @@ Docker is an open-source platform that enables developers to automate the deploy
 
 
 # Docker basic commands
- 
+
+ docker run <IMAGE>  run container from docker image
+
+ docker run -d <IMAGE> run container in detached way
+
+docker ps   List all running containers
+
+docker ps -a list all containers
+
+docker run -p 80:80 <Image> -p will expose containerport on hosmachine port
+
+docker run -P <IMAGE> -P will expose containerPort on random port (32768 - 65535)
+
+docker kill <CONTAINER> - it will kill container
+
+docker rm <CONTAINER> - it will remove stopped container
+
+docker rm -f <CONTAINER> - it will remove running container (forcefully)
+
+docker ps -q - list only container ids
+
+docker rm -f docker ps -q - will remove all running conainers
+
+docker create <IMAGE> Will create the container
+
+docker start <CONTAINER> will start the container
+
+docker exec <CONTAINER> <COMMAND> to execute command inside the contaienr
+
+docker exec -it <CONTAINRT> bash to enter in contaienr
+
+docker build <path> to build docker image
+
+docker build <path> -t <IMAGE_TAG> to give image tag while building the image
+
+docker tag <IMAGE_ID> <IMAGE_TAG> to give docker image tag
+
+docker push <IMAGE_TAG> to push docker image into docker registry
+
+docker login <REGISTRY> to login in docker registry
+
+docker pull <IAMGE_TAG> to pull image from docekr registry
+
+docker images to list docker images
+
+docker image rm <IMAGE> to remove unused docker image
