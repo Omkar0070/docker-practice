@@ -9,5 +9,6 @@ Docker enables more efficient use of system resources Instances of containerized
 Docker is an open-source platform that enables developers to automate the deployment and management of applications within lightweight, portable containers. Containers are self-contained, isolated environments that package an application and its dependencies, allowing them to run consistently across different computing environments.
 
 
+
 # Docker basic commands
  
